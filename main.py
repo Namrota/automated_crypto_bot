@@ -40,11 +40,8 @@ file_handler = logging.FileHandler("application.log")
 file_handler.setFormatter(formatter)
 file_handler.setLevel(logging.DEBUG)
 
-
+logging.basicConfig(level=logging.DEBUG,  handlers=[stream_handler, file_handler])
 logger = logging.getLogger()
-logger.setLevel(logging.DEBUG)
-logger.addHandler(stream_handler)
-logger.addHandler(file_handler)
 
 
 print("*" * 50)

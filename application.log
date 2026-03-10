@@ -1,0 +1,29 @@
+2026-03-10 11:30:19,507 - INFO :: Application started successfully.
+2026-03-10 11:30:19,507 - WARNING :: Warning: This is a warning message.
+2026-03-10 11:30:19,507 - ERROR :: Error: This is an error message.
+2026-03-10 11:30:19,507 - CRITICAL :: Critical: This is a critical message.
+2026-03-10 11:32:51,847 - INFO :: Application started successfully.
+2026-03-10 11:32:51,847 - DEBUG :: Debugging information: Application is running in debug mode.
+2026-03-10 11:32:51,847 - WARNING :: Warning: This is a warning message.
+2026-03-10 11:32:51,847 - ERROR :: Error: This is an error message.
+2026-03-10 11:32:51,847 - CRITICAL :: Critical: This is a critical message.
+2026-03-10 11:35:39,885 - INFO :: Application started successfully.
+2026-03-10 11:35:39,885 - DEBUG :: Debugging information: Application is running in debug mode.
+2026-03-10 11:35:39,885 - WARNING :: Warning: This is a warning message.
+2026-03-10 11:35:39,885 - ERROR :: Error: This is an error message.
+2026-03-10 11:35:39,885 - CRITICAL :: Critical: This is a critical message.
+2026-03-10 11:36:18,948 - INFO :: Application started successfully.
+2026-03-10 11:36:18,948 - DEBUG :: Debugging information: Application is running in debug mode.
+2026-03-10 11:36:18,948 - WARNING :: Warning: This is a warning message.
+2026-03-10 11:36:18,948 - ERROR :: Error: This is an error message.
+2026-03-10 11:36:18,948 - CRITICAL :: Critical: This is a critical message.
+2026-03-10 11:39:09,886 - INFO :: Application started successfully.
+2026-03-10 11:39:09,886 - DEBUG :: Debugging information: Application is running in debug mode.
+2026-03-10 11:39:09,886 - WARNING :: Warning: This is a warning message.
+2026-03-10 11:39:09,886 - ERROR :: Error: This is an error message.
+2026-03-10 11:39:09,886 - CRITICAL :: Critical: This is a critical message.
+2026-03-10 11:40:15,157 - INFO :: Application started successfully.
+2026-03-10 11:40:15,157 - DEBUG :: Debugging information: Application is running in debug mode.
+2026-03-10 11:40:15,157 - WARNING :: Warning: This is a warning message.
+2026-03-10 11:40:15,157 - ERROR :: Error: This is an error message.
+2026-03-10 11:40:15,157 - CRITICAL :: Critical: This is a critical message.
