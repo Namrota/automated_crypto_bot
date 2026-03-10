@@ -18,9 +18,7 @@ if getattr(sys, 'frozen', False):
 else:
     SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 
-#-----------------------------------------------------
-root= Tk()
-root.title("Cryptobot Application")
+
 #--------------------- CONSTANTS ----------------------------
 DEEP_TEAL= "#09637E"
 TEAL= "#088395"
@@ -44,28 +42,28 @@ logging.basicConfig(level=logging.DEBUG,  handlers=[stream_handler, file_handler
 logger = logging.getLogger()
 
 
-print("*" * 50)
+""" print("*" * 50)
 logger.info("Application started successfully.")
 logger.debug("Debugging information: Application is running in debug mode.")
 logger.warning("Warning: This is a warning message.")
 logger.error("Error: This is an error message.")
 logger.critical("Critical: This is a critical message.")
-print("*" * 50)
-
-# ----------------- ALIGNING THE APPLICATION -----------------
-root.update_idletasks()
-width = 800
-height = 800
-sreen_width = root.winfo_screenwidth()
-sreen_height = root.winfo_screenheight()
-x = (sreen_width - width) // 2
-y = (sreen_height - height) // 2
-root.geometry(f"{width}x{height}+{x}+{y}")
-root.config(padx=20, pady=20, bg=ICE_BLUE)
-#------------------------------------------------------------
+print("*" * 50) """
 
 
 
-
-
-root.mainloop()
+if __name__ == "__main__":
+    root= Tk()
+    root.title("Cryptobot Application")
+    # ----------------- ALIGNING THE APPLICATION -----------------
+    root.update_idletasks()
+    width = 800
+    height = 800
+    sreen_width = root.winfo_screenwidth()
+    sreen_height = root.winfo_screenheight()
+    x = (sreen_width - width) // 2
+    y = (sreen_height - height) // 2
+    root.geometry(f"{width}x{height}+{x}+{y}")
+    root.config(padx=20, pady=20, bg=ICE_BLUE)
+    #------------------------------------------------------------
+    root.mainloop()
