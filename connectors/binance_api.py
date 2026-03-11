@@ -33,6 +33,7 @@ from config import settings
 #--------------------- variables from settings.py --------------------------------#
 binance_base_url= settings.BASE_URL
 exchange_url= settings.EXCHANGE_INFO
+price_24hr= settings.TICKER_24HR
 #---------------------------------------------------------------------------------#
 #logger= logging.getlogger()
 
@@ -44,5 +45,37 @@ def get_contracts():
     #pprint.pprint([s['symbol'] for s in response_obj.json()['symbols']], compact= True)
     return symbol
 
+def get_24hr_ticker(symbol:str)-> dict:
+    '''
+    GET 24 hour roliing window price change statistics
+    ARGS:
+    symbol: Trading pair symbol
+    RETURNS:
+    Dictionary
+    Example for a symbol 'BTCUSDT':
+    {
+    "symbol": "BTCUSDT",
+    "priceChange": "-1137.30",
+    "priceChangePercent": "-1.614",
+    "weightedAvgPrice": "70140.32",
+    "lastPrice": "69319.00",
+    "lastQty": "0.002",
+    "openPrice": "70456.30",
+    "highPrice": "71748.10",
+    "lowPrice": "68932.90",
+    "volume": "214975.045",
+    "quoteVolume": "15078417861.83",
+    "openTime": 1773147540000,
+    "closeTime": 1773233999388,
+    "firstId": 7414325067,
+    "lastId": 7419918350,
+    "count": 5586555
+    }
 
-print(get_contracts())
+    
+    '''
+    response_obj= requests.get(f'{binance_base_url}{price_24hr}', params={'symbol': symbol.upper()})
+    response_obj.raise_for_status()
+    return response_obj.json()
+
+print(get_24hr_ticker(symbol="btcusdt"))
