@@ -78,4 +78,4 @@ def get_24hr_ticker(symbol:str)-> dict:
     response_obj.raise_for_status()
     return response_obj.json()
 
-print(get_24hr_ticker(symbol="PAXGUSDT"))
+print(get_24hr_ticker(symbol="DOTUSDT"))
