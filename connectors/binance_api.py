@@ -18,13 +18,22 @@ import os
 from dotenv import load_dotenv
 import requests
 import pprint
-import sys#appending a path
-sys.path.append('config')
-import settings
+import sys #appending a path
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from config import settings
+
+
+
+
+
+
 #load environment variables from local .env file:
-load_dotenv()
+#load_dotenv()
+
+#--------------------- variables from settings.py --------------------------------#
 binance_base_url= settings.BASE_URL
 exchange_url= settings.EXCHANGE_INFO
+#---------------------------------------------------------------------------------#
 #logger= logging.getlogger()
 
 # Simple function: GET Current exchange trading rules and symbol information
