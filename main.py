@@ -66,4 +66,5 @@ if __name__ == "__main__":
     root.geometry(f"{width}x{height}+{x}+{y}")
     root.config(padx=20, pady=20, bg=ICE_BLUE)
     #------------------------------------------------------------
+    
     root.mainloop()

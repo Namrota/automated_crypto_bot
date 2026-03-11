@@ -17,16 +17,21 @@ import logging
 import os
 from dotenv import load_dotenv
 import requests
+import pprint
 
 #load environment variables from local .env file:
 load_dotenv()
 binance_base_url= os.getenv("BASE_URL")
+exchange_url= os.getenv("EXCHANGE_INFO")
 #logger= logging.getlogger()
 
 # Simple function: GET Current exchange trading rules and symbol information
 def get_contracts():
-    response_obj= requests.get(f"{binance_base_url}/fapi/v1/exchangeInfo")
-    print(response_obj.status_code, response_obj.json())
+    response_obj= requests.get(f"{binance_base_url}{exchange_url}")
+    symbol=[s['symbol'] for s in response_obj.json()['symbols']]
+    #print(response_obj.status_code)
+    #pprint.pprint([s['symbol'] for s in response_obj.json()['symbols']], compact= True)
+    return symbol
 
 
-get_contracts()
+print(get_contracts())
