@@ -12,3 +12,6 @@ TESTNET_WEBSOCKET_URL= "wss://fstream.binancefuture.com"
 
 #URLs:
 EXCHANGE_INFO= "/fapi/v1/exchangeInfo"
+TICKER_24HR = "/fapi/v1/ticker/24hr"
+#latest prce for a symbol or symbols
+SYMBOL_PRICE= "/fapi/v2/ticker/price"
